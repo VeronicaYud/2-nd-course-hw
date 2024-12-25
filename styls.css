@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-weight: 400;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    box-sizing: border-box;
+    background-color: #202027;
+    background-image: url(image/Star1.svg), url(image/Star3.svg), url(image/Star2.svg), url(image/Star3.svg), url(image/Star2.svg), url(image/Star3.svg), url(image/Star2.svg);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: 585px 585px, 31px 31px, 55px 55px, 35px 35px, 70px 70px, 41px 41px, 70px 70px;
+    background-position: left calc(50% + 500px) top 877px, left calc(50% - 690px) top 1560px, left calc(50% - 650px) top 1605px, left calc(50% + 570px) top 2360px, left calc(50% + 630px) top 2380px, left calc(50% + 550px) top 5650px, left calc(50% + 630px) top 5600px;
+}
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+  
+}
+.top {
+    background-image: url("image/fone.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #E1FF8F;
+    height: 710px;
+}
+.header {
+
+}
+.article__title {
+  font-size: 64px;  
+  color: #202027;
+  padding-top: 196px;
+  padding-bottom: 24px;
+  font-weight: 700;
+}
+.article__text {
+    font-weight: 400;
+    font-size: 24px;
+    padding-bottom: 48px;
+}
+.article__btn {
+    width: 247px;
+    height: 66px;
+    border: 1px solid #202027;
+    background-color: #202027;
+    border-radius: 60px;
+    font-size: 24px;
+    color: #FFFFFF;
+    font-weight: 600;
+    
+}
+.article__btn:hover {
+    background-color:white;
+    color: black;
+    transition: all 0.5s;
+}
+.ribbon {
+    background-color: #BCEC30;
+    height: 90px;
+}
+.section__title {
+    font-size: 64px;
+    color: #FFFFFF;
+    padding-top: 94px;
+    padding-bottom: 24px;
+    font-weight: 700;
+    
+}
+.section__text {
+    font-size: 24px;
+    color: #FFFFFF;
+}
+.content {
+   
+    
+}
+.content__cards-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 32px;
+    
+}
+.content__cards {
+    width: 1201px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 32px;
+    padding-top: 72px;
+    padding-bottom: 96px;
+}
+.content__cards-game {
+    width: 1201px;
+    display: flex; 
+    flex-direction: column;
+    row-gap: 32px;
+}
+.card {
+    width: 378px;
+    background-color: white;
+    border-radius: 30px;
+    transition: all 0.5s;
+}
+.card:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+.card__text {
+       color: #202027;
+       font-size: 16px;
+       font-weight: 500;
+       
+    }
+.card__title {
+        color: #202027;
+        font-size: 32px;
+        font-weight: 700;
+        
+    }
+.card__items {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    padding-top: 32px;
+    padding-left: 32px;
+    padding-bottom: 36px;
+}
+.card-game {
+    height: 500px;
+    background-color: white;
+    border-radius: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+.card-game__text {
+    font-size: 24px;
+    color: #202027;
+    padding-top: 24px;
+    padding-bottom: 36px;
+}
+.card-game__title {
+    font-size: 48px;
+    color: #202027;
+    font-weight: 700;
+}
+.card-game__items {
+    max-width: 500px;
+    padding: 48px;
+}
+.card-game__img {
+    width: 600px;
+}
+.footer {
+    background-color: #BDED35;
+    height: 150px;
+    margin-top: 144px;
+    
+    display: flex;
+    justify-content: center;
+}
+.footer__text {
+    color: #000000;
+    font-size: 24px;
+    padding-top: 61px;
+    font-weight: 600;
+}
