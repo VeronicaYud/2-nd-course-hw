@@ -62,12 +62,19 @@ body {
     height: 90px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: start;
     gap: 51px;
     align-items: center;
+    width: 3220px;
+    padding-left: 49px;
+    padding-right: 49px;
+    
 }
-.ribbon__item {
-    height: 32px;
+.ribbon__text {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 33px;
+    text-transform: uppercase;
     
 }
 .content__title {
