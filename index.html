@@ -11,31 +11,33 @@
 </head>
 <body>
     <section class="top center">
-        <header class="header">
-            <article class="article">
-                <h1 class="article__title">Добро пожаловать<br>на мой сайт мини-игр</h1>
-                <p class="article__text">Тебе предстоит пройти несколько увлекательных игр.<br>Если готов, нажимай <b>"Поехали!"</b> и <b>приступай</b>.</p>
-                <form action="#section2">
-                     <button class="article__btn" type="submit">Поехали!</button>
-                </form>
-            </article>
-        </header>
+        <article class="article">
+            <h1 class="article__title">Добро пожаловать<br>на мой сайт мини-игр</h1>
+            <p class="article__text">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай <b>"Поехали!"</b> и <b>приступай</b>.</p>
+            <form class="article__form" action="#section2">
+                    <button class="article__btn" type="submit">Поехали!</button>
+            </form>
+            <form class="article__form-mobile" action="#section3">
+                <button class="article__btn" type="submit">Поехали!</button>
+            </form>
+            
+        </article>
     </section>
     <div class="ribbon">
         <p class="ribbon__text">викторина</p>
-        <img src="image/blackstar.png" alt="звезда"/>
+        <img class="ribbon__star" src="image/blackstar.png" alt="звезда"/>
         <p class="ribbon__text">угадай число</p>
-        <img src="image/blackstar.png" alt="звезда"/>
+        <img class="ribbon__star" src="image/blackstar.png" alt="звезда"/>
         <p class="ribbon__text">переверни текст</p>
-        <img src="image/blackstar.png" alt="звезда"/>
+        <img class="ribbon__star" src="image/blackstar.png" alt="звезда"/>
         <p class="ribbon__text">простая арифметика</p>
-        <img src="image/blackstar.png" alt="звезда"/>
+        <img class="ribbon__star" src="image/blackstar.png" alt="звезда"/>
         <p class="ribbon__text">камень, ножницы, бумага</p>
-        <img src="image/blackstar.png" alt="звезда"/>
+        <img class="ribbon__star" src="image/blackstar.png" alt="звезда"/>
         <p class="ribbon__text">генератор случайных цветов</p>
-        <img src="image/blackstar.png" alt="звезда"/>
+        <img class="ribbon__star" src="image/blackstar.png" alt="звезда"/>
     </div>
-    <section class="content center">
+    <section class="content content__nomobile center">
         <h2 class="content__title" id="section2">Об играх</h2>
         <p class="content__text">В моей коллекции представлено 6 игр на разные темы.</p>
         <p class="content__text">Игры несложные — в них может поиграть каждый.<br>Все игры доступны для пользования.</p>
@@ -90,9 +92,10 @@
             </div> 
         </div>
     </section>
-    <section class="content center">
-        <h2 class="content__title">Мини-игры</h2>
-        <div class="content__cards-game" >
+
+    <section class="content content__mobile center">
+        <h2 class="content__title" id="section3">Мини-игры</h2>
+        <div class="content__cards-game">
             <div class="card-game" id="game1">
                 <div class="card-game__items">
                     <h3 class="card-game__title">Угадай число</h3>
@@ -124,7 +127,7 @@
                 <img class="card-game__img" src="image/card5.png" alt="cardimage"/>
                 <div class="card-game__items" >
                     <h3 class="card-game__title">Викторина</h3>
-                    <p class="card-game__text">Отвечай на вопросы викторины с вариантами ответов.</p>
+                    <p class="card-game__text">Отвечай на вопросы викторины<br>с вариантами ответов.</p>
                     <button class="card-game__btn" type="submit">Играть!</button>
                 </div>
             </div>
@@ -142,7 +145,7 @@
                 <img class="card-game__img" src="image/card6.png" alt="cardimage"/>
                 <div class="card-game__items" >
                     <h3 class="card-game__title">Генератор случайных <br>цветов</h3>
-                    <p class="card-game__text">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
+                    <p class="card-game__text">Игра, в которой при клике<br>на кнопку фон страницы меняется на случайный.</p>
                     <button class="card-game__btn" type="submit">Играть!</button>
                 </div>
             </div>
