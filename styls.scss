@@ -3,6 +3,7 @@
     padding: 0;
 }
 body {
+    overflow-x: hidden;
     font-weight: 400;
     font-family: "Montserrat", serif;
     font-optical-sizing: auto;
@@ -88,8 +89,8 @@ body {
     font-size: 64px;
     color: #FFFFFF;
     padding-top: 94px;
-    padding-bottom: 24px;
     font-weight: 700;
+    padding-bottom: 24px;
 }
 .content__text {
     font-size: 24px;
@@ -109,13 +110,13 @@ body {
     flex-direction: row;
     column-gap: 32px;
     padding-top: 72px;
-    padding-bottom: 96px;
 }
 .content__cards-game {
     width: 1201px;
     display: flex; 
     flex-direction: column;
     row-gap: 32px;
+    padding-top: 48px;
 }
 .card {
     width: 378px;
@@ -206,6 +207,7 @@ body {
     font-size: 24px;
     color: #FFFFFF;
     font-weight: 600;
+    font-family: "Montserrat", serif;
 }
 .card-game__btn:hover {
     background-color:white;
