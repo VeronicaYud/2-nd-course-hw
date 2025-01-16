@@ -326,7 +326,7 @@ body {
   .content__title {
     font-size: 40px;
     padding-top: 48px;
-    padding-bottom: 48px;
+    padding-bottom: 0px;
   }
   .center {
     padding-left: unset;
