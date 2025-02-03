@@ -1,7 +1,7 @@
 function getRandomInt(min, max)  {
     min = Math.ceil(min);
     max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min) + min);
+    return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
 function simpleMath() {
@@ -22,10 +22,10 @@ function simpleMath() {
             break;
         case 3:
             result = number1 / number2;
-            break;    
+               
     }
 
-    let userNumber = prompt(`Решите задачку: ${number1} ${operSign[oper]} ${number2} ${result}`, 'введите число');
+    let userNumber = prompt(`Решите задачку: ${number1} ${operSign[oper]} ${number2}`, 'введите число');
     if(userNumber == result) {
         alert('Верно');
     } else {
