@@ -25,7 +25,7 @@ function simpleMath() {
                
     }
 
-    let userNumber = prompt(`Решите задачку: ${number1} ${operSign[oper]} ${number2}`, 'введите число');
+    let userNumber = prompt(`Решите задачку: ${number1} ${operSign[oper]} ${number2}`);
     if(userNumber == result) {
         alert('Верно');
     } else {

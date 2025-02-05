@@ -7,7 +7,7 @@ console.log("task2");
 function fruits(arr, s) {
     const difFruits = [];
 
-    arr.forEach((fruit) => {
+    arr.filter((fruit) => {
         if(fruit.toLowerCase().startsWith(s.toLowerCase())) {
             difFruits.push(fruit);
         }
