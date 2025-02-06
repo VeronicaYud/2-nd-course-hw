@@ -58,11 +58,10 @@ console.log(numbers6);
 // заданиеи 7
 console.log('task 7');
 const numbs7 = [9, 8, 7, 6, 5];
-let userNumber = prompt('Угадайте число');
-userNumber = Number(userNumber);
+let userNumber = Number(prompt('Угадайте число'));
 let isFound = numbs7.includes(userNumber);
 console.log(isFound);
-if (isFound == true) {
+if (isFound) {
     alert("Угадал");
 } else {
     alert("Не угадал");
@@ -73,7 +72,7 @@ console.log('task 8');
 const str = "abcdef";
 const arrey = str.split('');
 const rev = arrey.reverse();
-console.log(rev);
+console.log(rev.join(""));
 
 //  задание 9
 console.log('task 9');
@@ -81,8 +80,8 @@ const numbs8 = [
     [1, 2, 3],
     [4, 5, 6]
 ];
-const allNumbs = [...numbs8[0], ...numbs8[1]];
-console.log(allNumbs);
+const flat = numbs8.flat();
+console.log(flat);
 
 // задание 10
 console.log('task 10');
@@ -138,7 +137,7 @@ console.log('task 14');
 function getRandomInt(min, max)  {
     min = Math.ceil(min);
     max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min) + min);
+    return Math.floor(Math.random() * (max - min + 1) + min);
 }
 let numbers14 = [];
 for(i = 0; i < 10; i++) {
@@ -159,10 +158,10 @@ function getRandomInt(min, max)  {
 }
 
 let numbers15 = [];
-for(i = 0; i < 10; i++) {
+for(i = 0; i < 6; i++) {
     const number = getRandomInt(1, 10); 
     numbers15.push(number);
 }
 console.log(numbers15); 
-const numbs15 = numbers15.reduce((sum, number) => sum + number / numbers15.length, 0);
+const numbs15 = numbers15.reduce((sum, number) => sum + number, 0) / numbers15.length;
 console.log(numbs15); 
