@@ -17,7 +17,7 @@ function gameQuiz() {
     ];
     let result = 0;
     for(i = 0; i < quiz.length; i++) {
-        let answer = prompt(quiz[i].question + '\n' + "Варианты ответов: " + quiz[i].options.join(' '), "введите номер правильного ответа");
+        let answer = prompt(quiz[i].question + '\n' + "Варианты ответов: " + quiz[i].options.join(' '));
         if(answer == quiz[i].correctAnswer) {
             result = result + 1;
         }
