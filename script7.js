@@ -5,8 +5,7 @@ console.log(str.toUpperCase());
 // задание 2
 console.log("task2");
 function fruits(arr, s) {
-    const difFruits = arr.filter(fruit => fruit.startsWith(s));
-    return difFruits;
+    return arr.filter(fruit => fruit.toLowerCase().startsWith(s.toLowerCase()));
 }
 console.log(fruits(["Апельсин", "Яблоко", "Груша", "Арбуз"], "А"));
 
