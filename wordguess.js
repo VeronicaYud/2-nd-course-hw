@@ -29,6 +29,6 @@ function wordguess() {
         result = "ничья";
     }
 
-   alert(`Компьютер: ${word.toUpperCase()}, Вы: ${userWord.toUpperCase()}.\nРезультат игры: ${result.toUpperCase()}.`);     
+   alert(`Компьютер: ${word.toUpperCase()}, Вы: ${userWord.toUpperCase()}.\nРезультат игры: ${result.toUpperCase()}`);     
     
 }
