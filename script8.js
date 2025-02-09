@@ -1,4 +1,72 @@
-function callbackWithArrayLength(arr, callback) {
-    
-    callback();
+// задание 1 
+const people = [
+    { name: 'Глеб', age: 29 },
+    { name: 'Анна', age: 17 },
+    { name: 'Олег', age: 7 },
+    { name: 'Оксана', age: 47 }
+ ];
+
+ let arr;
+ arr = people.sort((a, b) => {
+    if(a.age < b.age) {
+         return -1;
+    }
+    if (a.age > b.age)  {
+        return 1;
+    } 
+  })
+ console.log(arr);
+
+ // задание 2
+
+function isPositive(a) {
+    if (a > 0) {
+        return true;
+    } else {
+        return false;
+    }
 }
+function isMale(b) {
+    if(b.gender == 'male') {
+        return true;
+    } else {
+        return false;
+    }
+}
+function filter(arr, callback) {
+    let array = [];
+    arr.forEach(el => {
+        if(callback(el)) {
+            array.push(el);
+        }
+    });
+    return array;
+}
+
+console.log(filter([3, -4, 1, 9], isPositive));
+
+const people2 = [
+   {name: 'Глеб', gender: 'male'},
+   {name: 'Анна', gender: 'female'},
+   {name: 'Олег', gender: 'male'},
+   {name: 'Оксана', gender: 'female'}
+];
+
+console.log(filter(people2, isMale));
+
+// задание 3
+const timer = () => {
+    const id1 = setInterval(() => {
+        console.log(new Date);
+    }, 3000);
+
+    setTimeout(() => {
+        clearInterval(id1); 
+        console.log('30 секунд прошло');
+    }, 30000)
+};
+
+timer();
+
+
+
