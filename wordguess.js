@@ -4,17 +4,23 @@ function getRandomInt(min, max)  {
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-function wordguess() {
+function wordGuess() {
     const arr = ["камень", "ножницы", "бумага"];
     let wordIndex = getRandomInt(0, 2);
     let word = arr[wordIndex];
     let userWord;
+    let userIndex;
     do {
         userWord = prompt("Введите одно из слов: камень, ножницы, бумага.");
-        userWord = userWord.toLowerCase();
-        userIndex = arr.indexOf(userWord);
-        if (userIndex == -1) {
-            alert("Вы ввели неправильное слово. Попробуйте еще раз.");
+        if (userWord != null) {
+            console.log(userWord);
+            userWord = userWord.toLowerCase();
+            userIndex = arr.indexOf(userWord);
+            if (userIndex == -1) {
+                alert("Вы ввели неправильное слово. Попробуйте еще раз.");
+            } 
+        } else {
+            userIndex = -1;
         }
     } while (userIndex == -1); 
     

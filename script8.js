@@ -20,18 +20,10 @@ const people = [
  // задание 2
 
 function isPositive(a) {
-    if (a > 0) {
-        return true;
-    } else {
-        return false;
-    }
+    return a > 0;
 }
 function isMale(b) {
-    if(b.gender == 'male') {
-        return true;
-    } else {
-        return false;
-    }
+    return b.gender == 'male';
 }
 function filter(arr, callback) {
     let array = [];
@@ -97,7 +89,7 @@ function sayHi (name) {
 // Код выше менять нельзя
 
 // Нужно изменить код ниже:
-delayForSecond(() => { sayHi('Глеб') })
+delayForSecond(() =>  sayHi('Глеб') );
 
 
 
