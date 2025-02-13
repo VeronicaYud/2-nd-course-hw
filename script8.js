@@ -17,6 +17,7 @@ const people = [
   })
  console.log(arr);
 
+ 
  // задание 2
 
 function isPositive(a) {
