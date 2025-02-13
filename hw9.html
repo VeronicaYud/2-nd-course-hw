@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .title_hide {
+            display: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 class = "title">Привет! Мир прекрасен!</h1>
+    <button id = "hide-text">Скрыть</button>
+    <hr>
+    <p class = "text">Солнечное утро. Привет, весна!</p>
+    <button id = "change-color">Изменить цвет</button>
+    <hr>
+    <h1 class = "text_inspiration">Ты можешь все! </h1>
+    <button id = "change-text">Изменить цвет</button>
+    <hr>
+    <p class="flowers">Не забудь полить цветы!</p>
+    <p class="description"> Читайте книги.</p>
+    <p class="flowers">Иначе они завянут!</p>
+    <p class="description">Изучайте математику.</p>
+    <p class="flowers">Инструкция: "Как ухаживать за цветами."</p>
+    <button id = "btn5">Изменить текст</button>
+    <hr>
+    <button id = "btn6">Добавить элемент</button>
+    <hr>
+    <p class="flowers">Не забудь полить цветы!</p>
+    <p class="description7"> Читайте книги.</p>
+    <p class="flowers">Иначе они завянут!</p>
+    <p class="description7">Изучайте математику.</p>
+    <p class="flowers">Инструкция: "Как ухаживать за цветами."</p>
+    <button id = "btn7">Удалить текст</button>
+    
+     <script> 
+        const titleEl = document.querySelector('.title');
+        const hideText = document.querySelector('#hide-text');
+        hideText.addEventListener('click', function () {
+            titleEl.classList.toggle('title_hide');
+        });
+
+        const textEl = document.querySelector('.text');
+        const changeColor = document.querySelector('#change-color');
+        changeColor.addEventListener('click', function () {
+            textEl.style.color = 'blue';
+        });
+
+        const textElement = document.querySelector('.text_inspiration');
+        const changeText = document.querySelector('#change-text');
+        changeText.addEventListener('click', function () {
+            textElement.textContent = 'Привет, мир!';
+        });
+
+        const paragraphList = document.querySelectorAll('.description');
+        const btn5 = document.querySelector('#btn5');
+        btn5.addEventListener('click', function () {
+            paragraphList.forEach((paragraph) => {
+                paragraph.textContent = 'Новый текст';
+            });
+        });
+        
+        const btn6 = document.querySelector('#btn6');
+        btn6.addEventListener('click', function () {
+            const newEl = document.createElement('p');
+            newEl.textContent = 'Новый абзац';
+            document.body.appendChild(newEl);  
+            
+        });
+
+        const btn7 = document.querySelector('#btn7');
+        const paragraph = document.querySelector('.description7');
+        btn7.addEventListener('click', function () {
+            paragraph.remove(); 
+        });
+
+
+       
+     </script>   
+</body>
+</html>
