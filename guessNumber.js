@@ -9,7 +9,11 @@ function guessNumberGame() {
     let userNumber;
 
     do {
-        userNumber = prompt("Я загадала число. Угадай его!", "Введи число");
+        userNumber = prompt("Я загадала число. Угадай его!\nВведи число:");
+        if (userNumber == null) {
+            alert("Конец игры");
+            return;
+        }
         if (number > userNumber) {
             alert("Ваше число меньше, чем загаданное");
         } else if (number < userNumber) {

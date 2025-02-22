@@ -8,7 +8,7 @@ function simpleMath() {
     let number1 = getRandomInt(1, 100);
     let number2 = getRandomInt(1, 100);
     let oper = getRandomInt(0, 3); // 0+, 1-, 2*, 3/
-    const operSign = ["+", "-", "*", "/"];
+    const operSign = ["+", "-", "*", ":"];
     let result;
     switch (oper) {
         case 0:

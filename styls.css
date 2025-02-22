@@ -73,6 +73,14 @@ body {
   display: none;
 }
 
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50% - 25.5px));
+  }
+}
 .ribbon {
   background-color: #BCEC30;
   height: 90px;
@@ -80,8 +88,9 @@ body {
   flex-direction: row;
   justify-content: start;
   gap: 51px;
+  animation: scroll 25s linear infinite;
   align-items: center;
-  width: 3220px;
+  width: 4750px;
   padding-left: 49px;
   padding-right: 49px;
 }
