@@ -36,6 +36,14 @@
         <img class="ribbon__star" src="image/blackstar.png" alt="звезда"/>
         <p class="ribbon__text">генератор случайных цветов</p>
         <img class="ribbon__star" src="image/blackstar.png" alt="звезда"/>
+        <p class="ribbon__text">викторина</p>
+        <img class="ribbon__star" src="image/blackstar.png" alt="звезда"/>
+        <p class="ribbon__text">угадай число</p>
+        <img class="ribbon__star" src="image/blackstar.png" alt="звезда"/>
+        <p class="ribbon__text">переверни текст</p>
+        <img class="ribbon__star" src="image/blackstar.png" alt="звезда"/>
+        <p class="ribbon__text">простая арифметика</p>
+        <img class="ribbon__star" src="image/blackstar.png" alt="звезда"/>
     </div>
     <section class="content content__nomobile center">
         <h2 class="content__title" id="section2">Об играх</h2>
@@ -146,7 +154,7 @@
                 <div class="card-game__items" >
                     <h3 class="card-game__title">Генератор случайных <br>цветов</h3>
                     <p class="card-game__text">Игра, в которой при клике<br>на кнопку фон страницы меняется на случайный.</p>
-                    <button class="card-game__btn" type="submit">Играть!</button>
+                    <button id="btn"  class="card-game__btn" type="submit">Играть!</button>
                 </div>
             </div>
         </div> 
@@ -161,5 +169,17 @@
     <script src="turnOver.js"></script>
     <script src="gameQuiz.js"></script>
     <script src="wordGuess.js"></script>
+    <script>
+        const body = document.querySelector('body');
+        const cardgameBtn = document.querySelector('#btn');
+        cardgameBtn.addEventListener("click", function() {
+            r = Math.floor(Math.random() * (256)),
+            g = Math.floor(Math.random() * (256)),
+            b = Math.floor(Math.random() * (256)),
+            color = '#' + r.toString(16) + g.toString(16) + b.toString(16);
+            body.style.background = color;
+        });
+    </script>
+    
 </body>
 </html>
