@@ -91,6 +91,3 @@ function sayHi (name) {
 
 // Нужно изменить код ниже:
 delayForSecond(() =>  sayHi('Глеб') );
-
-
-
